@@ -66,13 +66,13 @@ class AlertManager(object):
         "",
         "",
         AlertStatus.normal, AlertSize.none,
-        Priority.MID, None, "beepSingle", .2, 0., 0.),
+        Priority.MID, None, None, .2, 0., 0.),
 
     "disable": Alert(
         "",
         "",
         AlertStatus.normal, AlertSize.none,
-        Priority.MID, None, "beepSingle", .2, 0., 0.),
+        Priority.MID, None, None, .2, 0., 0.),
 
     "fcw": Alert(
         "BRAKE!",
@@ -217,7 +217,7 @@ class AlertManager(object):
         "openpilot Unavailable",
         "Pedal Pressed During Attempt",
         AlertStatus.normal, AlertSize.mid,
-        Priority.LOW, "brakePressed", "chimeDouble", .4, 2., 3.),
+        Priority.LOW, "brakePressed", None, .4, 2., 3.),
 
     "speedTooLowNoEntry": Alert(
         "openpilot Unavailable",
